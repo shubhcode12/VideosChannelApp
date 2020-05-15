@@ -65,7 +65,9 @@
                 <RelativeLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="6dp">
+                    android:layout_marginTop="6dp"
+                    android:paddingHorizontal="12dp"
+                    android:paddingVertical="6dp">
 
                     <RelativeLayout
                         android:id="@+id/lyt_title_row"
@@ -91,7 +93,7 @@
                                 android:text="Title"
                                 android:textStyle="bold"
                                 android:textColor="@color/colorText"
-                                android:textSize="16sp" />
+                                android:textSize="18sp" />
 
                         </RelativeLayout>
 
@@ -155,8 +157,7 @@
                             android:layout_marginLeft="8dp"
                             android:layout_marginStart="6dp"
                             android:layout_marginTop="3dp"
-                            android:layout_toEndOf="@+id/total_views"
-                            android:layout_toRightOf="@+id/total_views"
+                            android:layout_alignParentRight="true"
                             android:text="1 week ago"
                             android:textAppearance="?android:attr/textAppearanceSmall" />
 
