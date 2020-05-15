@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/drawer_recent"
+            android:icon="@drawable/ic_drawer_recent"
+            android:checked="true"
+            android:title="@string/drawer_recent" />
+
+        <item
+            android:id="@+id/drawer_category"
+            android:icon="@drawable/ic_drawer_category"
+            android:title="@string/drawer_category" />
+
+        <item
+            android:id="@+id/drawer_favorite"
+            android:icon="@drawable/ic_drawer_favorite"
+            android:title="@string/drawer_favorite" />
+
+    </group>
+
+
+
+    <item android:title="@string/drawer_separator_name">
+
+        <menu>
+
+            <group android:checkableBehavior="single">
+
+                <item
+                    android:id="@+id/drawer_rate"
+                    android:icon="@drawable/ic_drawer_rate"
+                    android:title="@string/drawer_rate" />
+
+                <item
+                    android:id="@+id/drawer_more"
+                    android:icon="@drawable/ic_drawer_more"
+                    android:title="@string/drawer_more" />
+
+                <item
+                    android:id="@+id/drawer_share"
+                    android:icon="@drawable/ic_drawer_share"
+                    android:title="@string/drawer_share" />
+
+                <item
+                    android:id="@+id/drawer_about"
+                    android:icon="@drawable/ic_drawer_info"
+                    android:title="@string/drawer_about" />
+
+                <item
+                    android:id="@+id/drawer_Phone"
+                    android:icon="@drawable/ic_phone_in_talk_black_24dp"
+                    android:iconTint="@color/colorWhite"
+                    android:title="Call Me" />
+
+            </group>
+
+        </menu>
+
+    </item>
+
+    <item android:title="Social">
+
+        <menu>
+
+            <group android:checkableBehavior="single">
+
+                <item
+                    android:id="@+id/drawer_Facebook"
+                    android:icon="@drawable/facebook"
+                    android:title="Facebook" />
+
+                <item
+                    android:id="@+id/drawer_Youtube"
+                    android:icon="@drawable/youtube"
+                    android:title="Subsribe on Youtube" />
+
+
+            </group>
+
+        </menu>
+
+    </item>
+
+</menu>

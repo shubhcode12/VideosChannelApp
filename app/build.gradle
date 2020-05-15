@@ -1,0 +1,48 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 27
+    defaultConfig {
+        applicationId "com.app.acms"
+        minSdkVersion 15
+        targetSdkVersion 27
+        versionCode 5
+        versionName "3.2.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+/* IMPORTANT : Highly recommended to keep the library version
+Be careful when update dependencies, different library version may caused error */
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    androidTestImplementation('com.android.support.test.espresso:espresso-core:2.2.2', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+    testImplementation 'junit:junit:4.12'
+    implementation "com.android.support:appcompat-v7:$supportlib_version"
+    implementation "com.android.support:cardview-v7:$supportlib_version"
+    implementation "com.android.support:design:$supportlib_version"
+    implementation "com.android.support:recyclerview-v7:$supportlib_version"
+    implementation "com.google.firebase:firebase-ads:$gps_version"
+    implementation "com.google.firebase:firebase-core:$gps_version"
+    implementation "com.google.firebase:firebase-messaging:$gps_version"
+    implementation "com.squareup.retrofit2:converter-gson:$retrofit_version"
+    implementation "com.squareup.retrofit2:retrofit:$retrofit_version"
+    implementation "com.google.android.exoplayer:exoplayer:$exoplayer_version"
+    implementation "com.google.android.exoplayer:extension-rtmp:$exoplayer_version"
+    implementation 'com.balysv:material-ripple:1.0.2'
+    implementation 'com.squareup.okhttp3:logging-interceptor:3.5.0'
+    implementation 'com.squareup.okhttp3:okhttp:3.8.1'
+    implementation 'com.squareup.picasso:picasso:2.5.2'
+    implementation 'org.ocpsoft.prettytime:prettytime:4.0.1.Final'
+    implementation 'com.google.android.ads.consent:consent-library:1.0.6'
+}
+
+apply plugin: 'com.google.gms.google-services'

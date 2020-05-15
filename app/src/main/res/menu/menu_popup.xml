@@ -1,0 +1,17 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:icon="@drawable/ic_drawer_favorite"
+        android:id="@+id/menu_context_favorite"
+        android:orderInCategory="100"
+        android:title="Add to Favorite"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/menu_context_share"
+        android:orderInCategory="100"
+        android:title="Share"
+        app:showAsAction="never" />
+
+</menu>
